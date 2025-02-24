@@ -5,14 +5,13 @@ import { InputField, InputIcon, InputRoot } from '@/components/input'
 import { Copy, Link } from 'lucide-react'
 
 interface InviteLinkInputProps {
-    inviteLink: string
+  inviteLink: string
 }
 
 export function InviteLinkInput({ inviteLink }: InviteLinkInputProps) {
-
-    function CopyInviteLink() {
-        navigator.clipboard.writeText(inviteLink)
-    }
+  function CopyInviteLink() {
+    navigator.clipboard.writeText(inviteLink)
+  }
 
   return (
     <InputRoot>
